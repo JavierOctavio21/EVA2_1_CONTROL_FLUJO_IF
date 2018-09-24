@@ -1,0 +1,24 @@
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+    cout << "¿Qué calificación obtuviste?" << endl;
+    double rCalifa;
+    
+    cin >> rCalifa;
+    while (rCalifa >= 100) {
+        cout << "Syntax ERROR" << endl;
+        cin >> rCalifa;
+    }
+    if (rCalifa >= 70) {
+        cout << "Tu calificación es: ";
+        cout << rCalifa << endl;
+        cout << "PASASTE" << endl;
+    } else {
+        cout << "Tu calificación es 0" << endl;
+        cout << "Lo Bueno es que hay Salud" << endl;
+    }
+    return 0;
+}
