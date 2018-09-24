@@ -1,0 +1,12 @@
+print("¿Qué calificación obtuviste?")
+rCalifa = float(input())
+while rCalifa >= 100:
+    print("Syntax ERROR")
+    rCalifa = float(input())
+if rCalifa >= 70:
+    print("Tu calificación es: ", end='', flush=True)
+    print(rCalifa)
+    print("PASASTE")
+else:
+    print("Tu calificación es 0")
+    print("Lo Bueno es que hay Salud")
